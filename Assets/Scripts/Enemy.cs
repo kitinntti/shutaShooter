@@ -31,7 +31,7 @@ public class Enemy : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other){
       if(other.CompareTag("Player")){
         player.health--;
-        Instantiate(effect, transform.position, Quaternion.identity);//敵がプレーヤーに接触すると敵に「はじけるエフェクト」発動
+        Instantiate(effect, transform.position, Quaternion.identity);//敵がプレーヤーに接触すると敵に「はじけるエフェクト」をその地点(transform.position)で発動
         Destroy(gameObject);
         //Enemyがplayerに接触すると、Playerのhealthが1減る。
         //プレーヤーに接触した敵は消滅(Destroy)する。
