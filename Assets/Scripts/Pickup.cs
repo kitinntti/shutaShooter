@@ -23,7 +23,7 @@ public class Pickup : MonoBehaviour
         if(inventory.isFull[i] == false){
           //もしインベントリーが満パンじゃなかったら、アイテムがインベントリーに入る
           inventory.isFull[i] = true;
-          Instantiate(itemButton,inventory.slots[i].transform);
+          Instantiate(itemButton,inventory.slots[i].transform, false);
           Destroy(gameObject);
           break;
           //インベントリーが満パンになったら、ピックアップの処理が終わる
