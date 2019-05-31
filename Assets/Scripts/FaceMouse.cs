@@ -18,3 +18,4 @@ public class FaceMouse : MonoBehaviour
       transform.up = direction;
     }
 }
+//ら
