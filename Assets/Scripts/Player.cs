@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public float speed;
     public int health = 10;
     //プレーヤーの体力。とりあえず10に設定。
+    public Animator animator;
 
     public Text healthDisplay;
     //テキストで体力(healthDisplay)を表示する。
