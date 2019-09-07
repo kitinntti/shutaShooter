@@ -37,6 +37,11 @@ public class Player : MonoBehaviour
           //プレーヤーの体力が0以下になったら、シーンをリロードする。
         }
 
+        transform.localPosition = Utils.ClampPosition(transform.localPosition);
+        //sprictsディレクトリのutilsの関数を呼び出してる
+        //なんか移動範囲を制限するやつらしい
+        //壁作って制限するのはなぜかできなかったクソ野郎 siwta
+
     }
 
     void FixedUpdate(){
