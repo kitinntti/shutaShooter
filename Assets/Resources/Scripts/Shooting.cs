@@ -14,10 +14,12 @@ public class Shooting : MonoBehaviour
     public void shots()
     {
         Instantiate(shot, playerPos.position, Quaternion.identity);
-    }  
+    }
+
+
     void Start(){
     playerPos = GetComponent<Transform>();
-  }
+    }
 
   void Update(){
 
@@ -47,7 +49,8 @@ public class Shooting : MonoBehaviour
                 Invoke("shots", 0.1f);
                 Invoke("shots", 0.2f);
 
- 
+
+
 
 
             }

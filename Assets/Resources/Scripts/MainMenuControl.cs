@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class MainMenuControl : MonoBehaviour
 {
     public void selectScene(){
-      switch (this.gameObject.name){
-        case "StartPlayingButton":
-          SceneManager.LoadScene("SampleScene");
-          break;
-      }
+        //  switch (this.gameObject.name){
+        //    case "StartPlayingButton":
+        //      SceneManager.LoadScene("SampleScene");
+        //      break;
+        //  }
+        SceneManager.LoadScene("SampleScene");    //フリップシーンへ
     }
 }
